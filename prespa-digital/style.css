@@ -1,0 +1,62 @@
+/*
+ Theme Name:        Prespa Digital
+ Theme URI:         https://nasiothemes.com/themes/prespa/
+ Description:       Prespa Digital serves as a child theme of Prespa, inheriting all the features of Prespa. The theme is crafted for digital marketing agencies, seo companies, affiliate marketers, copywriters and others who are engaged in creating high quality digital content. The theme is highly optimized for speed and seo. It uses Schema.org markup (microdata) to help you rank higher in the search results. The theme puts an emphasis on readability that combines clean design and excellent user experience. Theme demo: https://prespa-digital-demo.nasiothemes.com/ Theme documentation: https://nasiothemes.com/prespa-theme-documentation/
+ Author:            Atanas Yonkov
+ Author URI:        http://nasiothemes.com
+ Template:          prespa
+ Requires at least: 6.1
+ Tested up to:      6.5
+ Requires PHP:      5.6
+ Version:           1.0.6
+ License:           GNU General Public License v2 or later
+ License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:       prespa-digital
+ Tags:              blog, news, e-commerce, one-column, two-columns, three-columns, four-columns, grid-layout, right-sidebar, left-sidebar, block-patterns, wide-blocks, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+/* Add your child theme's custom css below */
+
+.hentry,
+#secondary>section,
+.comment-body,
+.comment-form {
+    border-radius: .625rem;
+}
+
+.dark-mode {
+    --wp--preset--color--dark-gray: #f7f7f7;
+    --wp--preset--color--silver-blue: #020205;
+    --wp--preset--color--text-secondary: #d2d2d2;
+}
+
+/* hover animation for project pattern */
+.pattern-projects .style-skew-animation-image img {
+    transition: all ease 0.2s;
+    height: 100%;
+    width: 100%;
+}
+
+.pattern-projects .style-skew-animation-image:hover img {
+    transform: rotate(5deg) scale(1.2);
+    opacity: 0.7;
+}
+
+.pattern-projects .style-overflow-after-animation {
+    overflow: clip;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* hover animation for testimonial pattern */
+.pattern-client-feedback .style-zoom-in-animation {
+    transition: transform .2s;
+}
+
+.pattern-client-feedback .style-zoom-in-animation:hover {
+    transform: scale(1.05)
+}
+
+.dark-mode .pattern-client-feedback .has-gray-background-color {
+    background-color: #020205 !important;
+}
